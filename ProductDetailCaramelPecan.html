@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Bun Bun Bake Shop Menu</title>
+    </head>
+    <body onload="onLoad()">
+        <div class="nav">
+            <ul>
+                <li style="float:left"><a href="home.html"><img src="smalllogo.png" alt="BunBun Logo" height="20"></a></li>
+                <li><a id="cartItems" href="cart.html">Cart</a></li>
+                <li>About</li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </div>
+        <img src="cinnamon.png" id="cinnamon" class="detail" alt="Cinnamon Roll" width="500" height="500">
+        <div class="productdetail">
+            <a href="menu.html">&#8592; Flavors</a>
+            <h2>Bun Bun's Warm Caramel Pecan<br>$2.75</h2>
+            <p>Our homemade caramel pecan cinnamon buns are made with love and care.<br>
+            They feature Bun Bun's Original Recipe with decadent cinnamon and creamy white home-made icing, swirled with caramel and topped off with pecans.</p>
+            <br><br><br><br>
+            <form name="dropdown" id="dropdown" onsubmit="handleSubmit(event)">
+                Quantity: <select name="amount" id="amount" required>
+                  <option value="" selected="selected">Choose Amount</option>
+                  <option value="1">1</option>
+                  <option value="3">3</option>
+                  <option value="6">6</option>
+                  <option value="12">12</option>
+                </select>
+                <br><br>
+                Glaze: <select name="glaze" id="glaze" required onchange="handleGlaze()">
+                  <option value="" selected="selected">Choose Glaze</option>
+                  <option value="none">None</option>
+                  <option value="sugarMilk">Sugar-Milk</option>
+                  <option value="vanillaMilk">Vanilla-Milk</option>
+                  <option value="doubleChocolate">Double-Chocolate</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Add to Cart">
+            </form>
+            
+            <br>
+            <hr>
+            <br>
+            <h3>Total: $ ______</h3>
+        </div>
+        <script src="javascript.js"></script>
+    </body>
+</html>

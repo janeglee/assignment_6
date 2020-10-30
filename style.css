@@ -1,0 +1,109 @@
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+h1 {
+    text-align: center;   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'arial narrow';
+}
+
+h2 {
+    font-family: 'arial narrow';
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'arial narrow';
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 50px;
+    background-color: #FFEC8A;
+    font-family: 'arial narrow';
+
+  }
+
+li {
+    float: right;
+    background-color: #FFEC8A;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: 'arial narrow';
+  }
+  
+a {
+    display: block;
+    padding: 8px;
+  }
+
+.active {
+    background-color: #DBAE84;
+}
+  
+table {
+    text-align: center;
+    width: 70%;
+    margin:auto;
+}
+
+td {
+    padding-bottom: 30px;
+}
+
+.flavors {
+    border-radius: 50%;
+    font-family: 'arial narrow';
+    font-size: 20px;
+}
+
+.detail {
+    float: right;
+    padding: 50px;
+    margin-right: 100px;
+}
+
+.productdetail {
+    margin-left: 100px;
+    margin-top: 100px;
+    font-family: "arial narrow";
+}
+
+p {
+    font-family: 'arial narrow';
+    font-size: 20px;
+}
+
+hr {
+    color: #ACACAC;
+}
+
+.box {
+    width: 70%;
+    border-radius: 25px;
+    border: 2px solid #FFD600;
+    background:#FFEC89;
+    padding: 30px;
+    margin: auto;
+}
+
+.payment {
+    font-size: 20px;
+    width: 50%;
+    border-radius: 25px;
+    border: 1px solid #000000;
+    background:#DBAE84;
+    padding: 10px;
+    margin: auto;
+}
