@@ -29,7 +29,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    height: 50px;
     background-color: #FFEC8A;
     font-family: 'arial narrow';
 
@@ -98,6 +97,17 @@ hr {
     margin: auto;
 }
 
+.box ul {
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+}
+
+.box li {
+    float: none;
+    width: 15%;
+}
+
 .payment {
     font-size: 20px;
     width: 50%;
@@ -106,4 +116,27 @@ hr {
     background:#DBAE84;
     padding: 10px;
     margin: auto;
+}
+
+.box #itemList {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.box #itemList ul {
+    width: 100%;
+    position: relative;
+}
+
+.box #itemList > li {
+    padding: 0;
+    width: 100%;
+    justify-self: right;
+}
+
+.box .removeItem {
+    cursor: pointer;
+    width: auto;
+    position: absolute;
+    right: 0;
 }
