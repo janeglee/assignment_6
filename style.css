@@ -24,6 +24,10 @@ h3 {
     font-family: 'arial narrow';
 }
 
+h4 {
+    text-align: center;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -123,7 +127,17 @@ hr {
     flex-wrap: wrap;
 }
 
+.box #wishlistList {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
 .box #itemList ul {
+    width: 100%;
+    position: relative;
+}
+
+.box #wishlistList ul {
     width: 100%;
     position: relative;
 }
@@ -134,9 +148,53 @@ hr {
     justify-self: right;
 }
 
+.box #wishlistList > li {
+    padding: 0;
+    width: 100%;
+    justify-self: right;
+}
+
 .box .removeItem {
     cursor: pointer;
     width: auto;
     position: absolute;
     right: 0;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+
+.mySlides {
+    margin-left: 100px;
+    width: 20%;
+    float: left;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: 100px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
